@@ -7,7 +7,7 @@ Angular Redux Pattern consists of:
 * Reducers,
 * Selectors,
 
-, for following purposes:
+for following purposes:
 * Fetching, storing and manipulating data,
 * Router State Composition,
 * CRUD operations and Entity pattern,
