@@ -1,0 +1,5 @@
+<h2>Page 1 Container</h2>
+<button type="button" (click)="dispatch()">Dispatch Pizzas</button>
+<button type="button" routerLink="1">Go to page-1/1</button>
+<pre *ngIf="(pizzas$ | async).length">{{(pizzas$ | async) | json}}</pre>
+<pre *ngIf="error$ | async">{{(error$ | async) | json}}</pre>

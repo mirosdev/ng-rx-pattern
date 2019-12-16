@@ -1,0 +1,10 @@
+<h2>Page 1 Route Container</h2>
+<button type="button" (click)="onSelect([5,6,7])">Select Toppings with ids: 5,6,7</button>
+<h2>Selected pizza:</h2>
+<pre>{{(pizza$ | async) | json}}</pre>
+
+<h2>Pizza With new Toppings</h2>
+<pre>{{(visualise$ | async) | json}}</pre>
+
+<h2>Toppings:</h2>
+<pre *ngIf="(toppings$ | async) && (toppings$ | async).length">{{(toppings$ | async) | json}}</pre>
